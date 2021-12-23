@@ -27,6 +27,7 @@ function renderAvatar(data) {
 
     if(data.user_pic !== null) {
         $('.layui-nav-img').attr('src', data.user_pic).show()
+        $('.u_text').html(firstname).hide()
     }else {
         $('.layui-nav-img').hide()
         var firstname = name[0].toUpperCase()
